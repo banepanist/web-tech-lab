@@ -2,10 +2,13 @@
 <html>
     <head>
         <title>Registrtation form</title>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
+
         <h1>Registrtation Form</h1>
         <p>please signup this form</p>
+        <form action="">
         <label for="name">FirstName:</label>
         <input placeholder="Firstname" type="text" id="name"  required>
         <label for="name">LastName:</label>
@@ -17,18 +20,21 @@
         <label for="text">Contactnum:</label>
         <input type ="text" name="number" id="number" placeholder="enter your contctnum">
         <br>
+        
         <label for="message">Message:</label>
         <textarea name="message" id="message" row="5" column="32"></textarea>
         <br>
         <select name="Position" id="Position">Select these Option
             <option value="">selected</option>
-           
+            
             <option value="Admin">Admin</option>
             <option value="Viewer">Viwer</option>
             <option value="User">User</option>
         </select>
 
-
+        </form>
+<br>
+<button>Submit</button>
 
 
     </body>
