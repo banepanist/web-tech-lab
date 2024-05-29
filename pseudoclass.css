@@ -1,0 +1,48 @@
+div{
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 14px;
+   
+}
+
+section{
+        display: flex;
+}
+p{
+    text-align: center;
+    transition: all 0.5s linear;
+}
+.firstelement{
+    background-color: pink;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+    
+}
+
+
+.firstelement:first-child{
+    background-color: aquamarine;
+}
+
+.firstelement:last-child{
+    background-color: blueviolet;
+}
+
+.firstelement:nth-child(3){
+    background-color:brown;
+}
+
+
+.firstelement:hover {
+    background-color:yellowgreen;
+}
+.firstelement:hover p{
+    scale: 1.2;
+
+}
