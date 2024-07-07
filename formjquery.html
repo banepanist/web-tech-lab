@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-min.js"></script>
+</head>
+<body>
+    <form id="myform">
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Email address"required>
+        <br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="********" required><br>
+        
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" placeholder="address"><br>
+        
+        <input type="submit" value="Submit">
+        <button>Click me</button>
+    </form>
+</body>
+<script>
+    $(document).ready(function(){
+        $('button').click(function(event){
+            event.preventDefault()
+            alert("Form submitted")
+
+            var email = $("#email").val();
+                var password = $("#password").val();
+                var address = $("#address").val();
+            alert(`Email:${email} ,password:${password},address:${address}`)
+
+        })
+    })
+
+</script>
+</html>
